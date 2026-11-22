@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitCore | Gym Management</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-icon">F</span><div><b>FITCORE</b><small>GYM MANAGEMENT</small></div></div>
+    <p class="nav-label">WORKSPACE</p>
+    <button class="nav active" data-page="dashboard">▦ <span>Dashboard</span></button>
+    <button class="nav" data-page="members">♙ <span>Members</span></button>
+    <button class="nav" data-page="trainers">✦ <span>Trainers</span></button>
+    <button class="nav" data-page="plans">▤ <span>Membership plans</span></button>
+    <button class="nav" data-page="subscriptions">◷ <span>Subscriptions</span></button>
+    <button class="nav" data-page="payments">₹ <span>Payments</span></button>
+    <button class="nav" data-page="analytics">▥ <span>Aggregations</span></button>
+    <div class="sidebar-bottom">Simple Gym Management<br><small>MongoDB • Express • Node</small></div>
+  </aside>
+  <main class="main">
+    <header><div><p class="eyebrow">FITCORE / MANAGEMENT</p><h1 id="pageTitle">Dashboard</h1></div><span class="status"><i></i> SYSTEM ONLINE</span></header>
+    <section id="content"></section>
+  </main>
+  <div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-head"><h2 id="modalTitle">Add record</h2><button id="closeModal" class="close">×</button></div><form id="recordForm"><div id="formFields" class="form-grid"></div><div class="modal-actions"><button type="button" class="btn secondary" id="cancelModal">Cancel</button><button class="btn primary">Save record</button></div></form></div></div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body></html>
